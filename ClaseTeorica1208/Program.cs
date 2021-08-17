@@ -14,11 +14,15 @@ namespace ClaseTeorica1208
         //bucles
         public static void loops()
         {
-            int[] numbers = new int[3];
-            numbers[0] = 5;
-            numbers[1] = 8;
-            numbers[2] = 10;
-
+            /* escribir un ciclo que permita capturar los valores 
+            * a almacenar en el arreglo de numbers con un tamano de 10.
+            */
+            int[] numbers = new int[10];
+            for (int a = 0; a < 10; a++)
+            {
+                Console.WriteLine("ingresar el valor del elemento {0}: ", a);
+                numbers[a] = Convert.ToInt32(Console.ReadLine());
+            }    
             //ciclo while
             int i = 0;
             Console.WriteLine("IMPRIME ELEMENTOS CON WHILE.");
