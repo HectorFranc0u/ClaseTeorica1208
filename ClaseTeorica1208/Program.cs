@@ -14,9 +14,12 @@ namespace ClaseTeorica1208
         //bucles
         public static void loops()
         {
-            /* escribir un ciclo que permita capturar los valores 
+            /* 1- escribir un ciclo que permita capturar los valores 
             * a almacenar en el arreglo de numbers con un tamano de 10.
+            * 2 - Calcular el promedio de los numeros almacenados en el array.
             */
+
+            int prom = 0;
             int[] numbers = new int[10];
             for (int a = 0; a < 10; a++)
             {
@@ -41,17 +44,24 @@ namespace ClaseTeorica1208
                 c++;
             } while (c < numbers.Length);
 
-            Console.WriteLine("IMPRIME CICLOS CON FOR");
+            Console.WriteLine("IMPRIME CICLOS CON FOR - ARREGLO ORDENADO.");
+            Array.Sort(numbers);
             for (int j = 0; j < numbers.Length; j++)
             {
                 Console.WriteLine(numbers[j]);
+                prom = prom + numbers[j];
             }
 
-            Console.WriteLine("IMPRIME ELEMENTOS CON FOREACH");
+
+            Console.WriteLine("IMPRIME ELEMENTOS CON FOREACH - ARREGLO EN INVERTIDO");
+            Array.Reverse(numbers);
             foreach(int item  in numbers)
             {
                 Console.WriteLine(item);
             }
+
+            Console.WriteLine(prom);
+            Console.WriteLine("EL PROMEDIO ES: {0};", (prom / (numbers.Length)));
         }
     }
 }
