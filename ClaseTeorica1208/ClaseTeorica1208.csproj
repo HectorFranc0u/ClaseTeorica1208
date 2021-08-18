@@ -2,8 +2,8 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>net5.0</TargetFramework>
-    <StartupObject>ClaseTeorica1208.Program</StartupObject>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <StartupObject>ClaseTeorica1208.colecciones</StartupObject>
   </PropertyGroup>
 
 </Project>
